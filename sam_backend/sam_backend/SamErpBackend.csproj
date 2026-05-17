@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>SamErpBackend</RootNamespace>
+    <AssemblyName>SamErpBackend</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- PostgreSQL driver (replaces System.Data.SqlClient) -->
+    <PackageReference Include="Npgsql" Version="8.0.3" />
+
+    <!-- BCrypt password hashing — same package as before -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+
+    <!-- Swagger UI -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+</Project>

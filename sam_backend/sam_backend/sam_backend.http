@@ -1,0 +1,6 @@
+@sam_backend_HostAddress = http://localhost:5121
+
+GET {{sam_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
